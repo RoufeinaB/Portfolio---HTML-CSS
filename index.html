@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Projet final pour le cours de HTML & CSS sous forme de Portfolio en Landing Page">
+        <meta name="Author" content="Crée par Roufeina Bali">
+        <meta name="viewport" content="width=device-width, initial - scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=#header>Qui suis-je ?</a></li>
+                    <li><a href=#langue>Polyglotte</a></li>
+                    <li><a href=#competence>Compétence</a></li>
+                    <li><a href=#projet>Mes projets</a></li> 
+                    <li><a href=#formulaire>Me contacter</a></li>
+                </ul>
+            </nav>
+        
+            <img src="images/eme.png" alt="Photo d'un avatar">
+
+            <div id="droite">
+                <h1> Roufeina Bali </h1>
+                <p> Etudiante en Développement Web et Application à l'Efrei </p>
+            </div>
+        </header>
+        <main>
+            <section id="langue">
+                <h2>Polyglotte</h2>
+                <img src="images/uyghur.png" alt="Drapeau des Ouighours">
+                <img src="images/France.png" alt="Drapeau de la France">
+                <img src="images/chine.png" alt="Drapeau de la Chine">
+                <img src="images/turquie.png" alt="Drapeau de la Turquie">
+                <img src="images/Espagnol.png" alt="Drapeau de l'Espagne">
+                <img src="images/Anglais.png" alt="Drapeau de l'angleterre">
+            </section>
+            <section id="information">
+                <P> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sunt tenetur. Architecto voluptas nihil delectus totam qui quasi quam, cupiditate labore mollitia? Hic et excepturi reprehenderit ad, commodi ab. Commodi?
+                </P> 
+                <!-- Modifier le lorem en vrai texte -->
+            </section>
+            <section id="competence">
+                <h2>Mes compétence</h2>
+
+                <p>HTML</p>
+                <div class="barre">
+                    <div id="choix html">80%</div>
+                </div>
+
+                <p>Css</p>
+                <div class="barre">
+                    <div id="choix css">60%</div>
+                </div>
+
+                <p>Javascript</p>
+                <div class="barre">
+                    <div id="choix Javascript">50%</div>
+                </div>
+
+                <p>PHP</p>
+                <div class="barre">
+                    <div id="choix php">35%</div>
+                </div>
+            </section>
+            <section id="projet">
+                <h1>Mes anciens projet</h1>
+                <div id="projet_1">
+                    <img src="images/bridge.jpg" alt="Screen d'un site web ">
+                    <h2>Site d'une Agence de voyage</h2>
+                    <p>
+                        Voici un site réaliser pour une évaluation scolaire <br>
+                        Le projet consister à reprendre un site déja existant et de proposer des amélioration que ce soit visuel ou utilitaire. Nous avions choisi le site d'une agence de voyage nommée MT Voyage qui posséde uniquement les information de base ce qui nous à permis d'apporter notre créativité.
+                    </p>
+                </div>
+                <div id="projet_2">
+                    <img src="images/bridge.jpg" alt="Screen d'un site web ">
+                    <h2>IKEO</h2>
+                    <p>
+                        Voici un site réaliser pour un exercice pour le cours de HTML <br>
+                        L'exercice nous permettais de revoir la création d'un nav avec des redirection sur d'autre site,l'ajout des photos et vidéos en respectant un cahier des charges.
+                    </p>
+                </div>
+                <div id="projet_3">
+                    <img src="images/bridge.jpg" alt="Screen d'un site web ">
+                    <h2>Dolania</h2>
+                    <p>
+                        Voici un site réaliser pour le restaurant Dolania <br>
+                        Dolania avais besoin d'un site vitrine avec un menu détailler et illustré pour mettre en avant la cuisine Ouighours.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="formulaire">
+                <h2>Me Contacter</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti debitis, odit facere, nesciunt atque, quas aspernatur vero reprehenderit laborum doloribus at veritatis itaque. Alias quos maiores ipsa vel debitis?
+                </p> 
+                <!-- Changer le lorem en vrai texte -->
+                <form action="traitement.php" method="post" enctype="multipart/form-data">
+
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="lastname" maxlength="100" id="lastname" required>
+                    <br>
+
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" maxlength="100" id="firstname" required>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" maxlength="200" required>
+                    <br>
+
+                    <textarea name="avis" id="avis" maxlength="1000" cols="70" rows="10"></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <!-- Mettres les logos de liens -->
+            <div id="reseaux">
+                <h2> Mes réseaux sociaux </h2>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/LOGO_EFREI-WEB_noir.png" alt="Instagram">
+                </a>
+                <a href="https://www.discord.com" target="_blank">
+                    <img src="images/LOGO_EFREI-WEB_noir.png" alt="Discord">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/LOGO_EFREI-WEB_noir.png" alt="Linkedin">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
